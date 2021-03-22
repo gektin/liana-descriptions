@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { getSecondsTo, convertSeconds } from '../../../project-utils/clock-utils';
 
-const Clock = () => {
+const Clock = (props) => {
 
   // initialize second count with absolute limit
   const [secondsTotal, setSecondsTotal] = useState(getSecondsTo('2021-04-22 23:59:59'));
